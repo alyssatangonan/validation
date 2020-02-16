@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create a New Event</title>
+	<script src = "event.js"></script>
+</head>
+<body>
+    <form>
+        <label>Event Type: </label>
+        <select name="type" id="type">
+            <option value ="">Choose one: </option>
+            <option value = "1">1</option>
+            <option value ="2">2</option>
+            <option value = "3">3</option>
+            <option value ="4">4</option>
+            <option value = "5">5</option>
+            </select><br></br>
+
+        <label>Event Title: <input type="text" id="title"></label><br></br>
+
+        <label>Event Dates: <input type="date" id = "date"></label>
+        <label>to <input type ="date" id ="to"></label><br></br>
+
+        <label>Posting Date: <input type="date" id = "post"></label><br></br>
+        
+        <input type="checkbox" id="req" name="req"/>
+        <label for = "same">Is Registration Required?</label><br></br>
+
+        <input type="checkbox" id="prog" name="prog"/>
+        <label for = "same">Is this event associated with any Family Programs?</label><br></br>
+
+        <input type="checkbox" id="comp" name="comp"/>
+        <label for = "same">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br></br>
+
+        <input type="checkbox" id="point" name="point"/>
+        <label for = "same">Is There a Point of Contact?</label><br></br>
+
+        <input type="checkbox" id="host" name="host"/>
+        <label for = "same">Is There a Hosting Command Point of Contact?</label><br></br>
+
+        <input type = "submit" value = "Save" onclick="validate()"/>
+        <input type = "button" value = "Cancel"/>
+    </form><br></br>
+</body>
+</html>
