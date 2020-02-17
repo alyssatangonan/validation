@@ -5,8 +5,10 @@ function validate(){
     var to=document.getElementById('to').value;
     var post=document.getElementById('post').value;
     
-
-    if (type==""){
+    if(type==""&&title==""&&date==""&&to==""&&post==""){
+        alert("All fields required")
+        return false;
+    }else if (type==""){
         alert("Please Enter Event Type")
         return false;
     }else if (title==""){
@@ -21,12 +23,12 @@ function validate(){
     }else if (post==""){
         alert("Please Enter Posting Date")
         return false;
+    }else if(date>to||date>post||to>post){
+        alert("Invalid Date")
+        return false;
     }else{
        alert("You have successfully submitted your entry!")
         return true;
     }
 }
-
-
-
 
